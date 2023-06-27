@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="reset.css">
+  <title>Frontend Mentor | Age calculator app</title>
+</head>
+<body>
+
+  <main>
+    <article class="container">
+      <form id="form">
+      <div class="input-dates">
+        <div class="input-box">
+          <label class="input-date-label" for="day">
+            Day
+          </label>
+          <input class="input-date" type="number" name="day" id="day" placeholder="DD">
+          <p class="error-message" id="error-message-day">Must be a valid day</p>
+        </div>
+        <div class="input-box">
+          <label class="input-date-label" for="month">
+            Month
+          </label>
+          <input class="input-date" type="number" name="month" id="month" placeholder="MM">
+          <p class="error-message" id="error-message-month">Must be a valid month</p>
+        </div>
+        <div class="input-box">
+          <label class="input-date-label" for="year">
+            Year
+          </label>
+          <input class="input-date" type="number" name="year" id="year" placeholder="YYYY">
+          <p class="error-message" id="error-message-year">Must be in the past</p>
+        </div>
+      </div>
+      <div class="divider">
+        <div class="line-divider"></div>
+        <button class="btn" id="submit-btn">
+          <img class="btn-arrow" src="./assets/images/icon-arrow.svg" alt="arrow icon">
+        </button>
+      </div>
+      <div class="output-dates">
+        <p class="output-text"><span id="output-years-value">38</span>years</p>
+        <p class="output-text"><span id="output-months-value">3</span>months</p>
+        <p class="output-text"><span id="output-days-value">26</span>days</p>
+      </div>
+    </form>
+    </article>
+  </main>
+  <script src="./main.js"></script>
+</body>
+</html>
